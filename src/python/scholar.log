@@ -1,0 +1,124 @@
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=4bahYMkAAAAJ:u5HHmVD_uO8C
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=18104797610932568627
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=0,5&sciodt=0,5&cites=18104797610932568627&scipsc=
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=0,5&sciodt=0,5&cites=18104797610932568627&scipsc=
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=0,5&sciodt=0,5&cites=18104797610932568627&scipsc=
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=0,5&sciodt=0,5&cites=18104797610932568627&scipsc=
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Marty
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Marty%20Banks
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 10 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=100&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=200&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=300&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=400&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Marty%20Banks
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 10 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=100&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=200&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=300&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=400&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Marty%20Banks
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 10 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=100&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=200&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=300&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&cstart=400&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Steven%20A.%20Cholewiak
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=4bahYMkAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
