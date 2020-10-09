@@ -15,5 +15,7 @@
         "psr-4": {
             "Proximify\\HindexReader\\": "src/"
         }
+    },
+    "scripts": {
     }
 }   

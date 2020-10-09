@@ -1,4 +1,6 @@
 /vendor/
+/src/python/scholar.log
+/www/scholar.log
 composer.phar
 composer-setup.php
 

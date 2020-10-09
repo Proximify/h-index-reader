@@ -18,17 +18,29 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 class GoogleScholar
 {
-    const LIBRARIES = ['scholarly'];
+    const LIBRARY_PATH = __DIR__ . '/python/_gscholar.py';
 
     function __construct() 
     {
 
     }
 
-    function getHindex($q)
+    function queryHIndex($q)
     {
-        $path = __DIR__ . '/python/_';
-        $process = new Process(['python3', $path . self::LIBRARIES[0] . '.py', $q]);
+        $process = new Process(['python3', self::LIBRARY_PATH, '--q', $q]);
+        $process->run();
+
+        // executes after the command finishes
+        if (!$process->isSuccessful()) {
+            throw new ProcessFailedException($process);
+        }
+
+        return $process->getOutput();
+    }
+
+    function getHIndexByAuthorId($id)
+    {
+        $process = new Process(['python3', self::LIBRARY_PATH, '--id', $id]);
         $process->run();
 
         // executes after the command finishes

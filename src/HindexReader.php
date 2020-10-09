@@ -21,9 +21,16 @@ class HindexReader
     {
     }
 
-    function getHindex($q) {
+    function queryHIndex($q) {
         $gscholar = new GoogleScholar();
 
-        return $gscholar->getHindex($q);
+        return $gscholar->queryHIndex($q);
+    }
+
+    function getHIndexByAuthorId($id)
+    {
+        $gscholar = new GoogleScholar();
+        
+        return $gscholar->getHIndexByAuthorId($id);
     }
 }
