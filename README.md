@@ -84,7 +84,7 @@ It is also possible to use author's profile ID to get his indices:
     }
 </pre>
 
-It is also possible to fetch in a batch. To do that, you must set the <pre>batchFilePath<pre> in config.json under the settings as well as the output <pre> batchOutputFilePath </pre>. An example input batch file is shown below:
+It is also possible to fetch in a batch. To do that, you must set the batchFilePath in config.json under the settings as well as the output batchOutputFilePath. An example input batch file is shown below:
 
 <pre>
 [
