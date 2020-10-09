@@ -56,8 +56,6 @@ class HindexReader
                 if ($author['affiliation'])
                     $q = $q . ', ' . $author['affiliation'];
 
-                echo $q;
-
                 $indicies .= $this->service->queryHIndex($q);
 
             } else {

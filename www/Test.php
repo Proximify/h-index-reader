@@ -16,7 +16,7 @@ use Proximify\HindexReader;
 $hindex = new HindexReader\HindexReader();
 // echo $hindex->queryHIndex('Diana Inkpen, University of Ottawa (Computer Science)');
 
-// echo $hindex->getHIndexByAuthorId('Smr99uEAAAAJ');
+echo $hindex->getHIndexByAuthorId('avUYKIgAAAAJ');
 
 
-echo $hindex->getHIndexBatch();
+// echo $hindex->getHIndexBatch();
