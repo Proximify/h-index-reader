@@ -56,7 +56,7 @@ Result:
         'interests': ['vision science', 'psychology', 'human factors', 'neuroscience'],
         'name': 'Martin Banks'
     }
-<pre>
+</pre>
 
 It is also possible to use author's profile ID to get his indices: 
 
