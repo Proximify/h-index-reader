@@ -2,9 +2,6 @@
 
 namespace Proximify\HindexReader;
 
-use Symfony\Component\Process\Exception\ProcessFailedException;
-use Symfony\Component\Process\Process;
-
 require_once __DIR__ . '/../vendor/autoload.php';
 
 /**
@@ -18,20 +15,15 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 class HindexReader
 {
-    function __construct() {}
+    public $defaultSource = 'gscholar';
 
-    function getHindex($name) {
-        $process = new Process(['python3', 'python/_scholarly.py', $name]);
-        $process->run();
+    function __construct() 
+    {
+    }
 
-        // executes after the command finishes
-        if (!$process->isSuccessful()) {
-            throw new ProcessFailedException($process);
-        }
+    function getHindex($q) {
+        $gscholar = new GoogleScholar();
 
-        echo $process->getOutput();
+        return $gscholar->getHindex($q);
     }
 }
-
-$hindex = new HindexReader();
-$hindex->getHindex('Steven A Cholewiak');
