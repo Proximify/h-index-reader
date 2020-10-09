@@ -37,7 +37,7 @@ The h-index of an author can be fetched in two ways (i) by providing name and af
 Fetching an author's indices with his name and affiliation:
 
 <pre>
-    $hindexReader->queryHIndex('Marty Banks, Berkeley')
+    $hindexReader->queryHIndex('Marty Banks, Berkeley');
 </pre>
 
 Result:
@@ -61,7 +61,7 @@ Result:
 It is also possible to use author's profile ID to get his indices: 
 
 <pre>
-    $hindexReader->getHIndexByAuthorId('avUYKIgAAAAJ')
+    $hindexReader->getHIndexByAuthorId('avUYKIgAAAAJ');
 </pre>
 
 <pre>
