@@ -1,4 +1,3 @@
-import sys
 import argparse
 from scholarly import scholarly
 

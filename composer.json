@@ -17,5 +17,6 @@
         }
     },
     "scripts": {
+        "pre-install-cmd": "bash scripts/dependency-checker.sh"
     }
 }   
