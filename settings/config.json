@@ -1,0 +1,4 @@
+{
+    "batchFilePath": "www/authors.json",
+    "batchOutputFilePath": "www/output.json"
+}

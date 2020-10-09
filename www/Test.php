@@ -14,6 +14,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Proximify\HindexReader;
 
 $hindex = new HindexReader\HindexReader();
-echo $hindex->queryHIndex('Steven A Cholewiak');
+// echo $hindex->queryHIndex('Diana Inkpen, University of Ottawa (Computer Science)');
 
-echo $hindex->getHIndexByAuthorId('Smr99uEAAAAJ');
+// echo $hindex->getHIndexByAuthorId('Smr99uEAAAAJ');
+
+
+echo $hindex->getHIndexBatch();
