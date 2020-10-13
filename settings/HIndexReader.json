@@ -1,24 +1,3 @@
 {
-    "people": [
-        {
-            "affiliation": "Research Fellow, Proximify",
-            "name": "Diego Macrini",
-            "profile_url": "https://scholar.google.com/citations?user=avUYKIgAAAAJ&hl"
-        },
-        {
-            "affiliation": "Mannheim University",
-            "name": "Martin Weber",
-            "profile_url": "https://scholar.google.com/citations?user=SDlCXgwAAAAJ&hl"
-        },
-        {
-            "affiliation": "Software Developer - Researcher",
-            "name": "Seyed M. Mirtaheri",
-            "profile_url": "https://scholar.google.com/citations?user=fw9tblsAAAAJ&hl"
-        },
-        {
-            "affiliation": "University of Ottawa (Computer Science)",
-            "name": "Diana Inkpen",
-            "profile_url": "https://scholar.google.com/citations?user=66pwIBcAAAAJ&hl"
-        }
-    ]
+    "people": []
 }
