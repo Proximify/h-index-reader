@@ -31,7 +31,7 @@ h-index-reader provides an API to provide indices of an author from different so
     $hindexReader = new HIndexReader();
 </pre>
 
-The h-index of an author can be fetched in two ways (i) by providing name and/or affiliation of a person (ii) and/or profile URL (e.g. GoogleScholar URL). Name field is mandatory, however affiliation and profile url are optional fields.
+The h-index of authors can be fetched by providing name and/or affiliation of a person as well as Google Scholar profile URL. Name field is mandatory, however affiliation and profile URL are optional.
 
 <pre>
 $people = [
