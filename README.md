@@ -73,3 +73,6 @@ Output:
   }
 ]
 </pre>
+
+# Settings
+h-index-reader offers a [settings file](../blob/master/settings/HIndexReader.json) where you can configure advanced options.
