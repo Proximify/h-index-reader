@@ -17,66 +17,76 @@ use \Exception;
 
 class HIndexReader
 {
-    const CONFIG_FILE = '../settings/config.json';
+    const SETTINGS_FILE = '../settings/HIndexReader.json';
 
     public $service;
+    public $settings;
+    public $options;
 
-    function __construct($service = 'gscholar') 
+    function __construct($options = []) 
     {
-        if ($service == 'gscholar')
-            $this->service = new GoogleScholar();
-        else {
-            throw new Exception('Invalid service: ' . $service);
-        }
-    }
-    function queryHIndex($q) {
-        return $this->service->queryHIndex($q);
+        // $this->settings = $this->getSettings();
+        $this->service = new GoogleScholar();
     }
 
-    function getHIndexByAuthorId($id) {        
-        return $this->service->getHIndexByAuthorId($id);
+    function getSettings()
+    {
+        return json_decode(file_get_contents(getcwd() . '/' . self::SETTINGS_FILE), true);
     }
 
-    function getHIndexBatch() {
-        $config = $this->getConfig();
-        $batchFilePath = $config['batchFilePath'];
-        $base = __DIR__ . '/../';
-        $authors = json_decode(file_get_contents($base . $batchFilePath), true);
-        $indicies = '';
-        
-        foreach ($authors as $author)
+    function parseProfileUrl($profileUrl)
+    {
+        if (filter_var($profileUrl, FILTER_VALIDATE_URL) === FALSE) 
+            return;
+
+        $urlParts = explode('user=', $profileUrl);
+
+        if (empty($urlParts[1]))
+            return;
+
+        $profileId = $urlParts[1];
+
+        return $profileId;
+    }
+
+    function queryHIndex($people = NULL) {
+
+        if (empty($people))
+            $people = $this->settings['people'];
+
+        foreach ($people as $person)
         {
-            if (empty($author['id'])) {
-                
-                if (empty($author['name']))
+            if (empty($person['profile_url']))
+            {
+                if (empty($person['name']))
                     return;
 
-                $q = $author['name'];
+                $q = $person['name'];
 
-                if ($author['affiliation'])
-                    $q = $q . ', ' . $author['affiliation'];
+                if (isset($person['affiliation']))
+                    $q = $q . ', ' . $person['affiliation'];
 
-                $indicies .= $this->service->queryHIndex($q);
+                $res = $this->service->queryHIndex($q);
 
-            } else {
-                $indicies .= $this->service->getHIndexByAuthorId($author['id']);
+                if (!$res)
+                    return;
+
+                $indices []= $res;
+            }
+            else
+            {
+                $profileUrl = $person['profile_url'];
+                $profileId = $this->parseProfileURL($profileUrl);
+
+                if (!$profileId)
+                    return;
+
+                $res = $this->service->getHIndexByAuthorId($profileId);
+
+                $indices []= $res;
             }
         }
 
-        $outputFilePath = $base . $config['batchOutputFilePath'];
-
-        file_put_contents($outputFilePath, $indicies);
-    } 
-
-    function getConfig($key = NULL) {
-        if (!file_exists(self::CONFIG_FILE))
-            throw new exception('The file does not exist.');    
-    
-        $contents = json_decode(file_get_contents(self::CONFIG_FILE), true);
-
-        if (isset($key))
-            return $contents[$key];
-
-        return $contents;
+        return $indices;
     }
 }

@@ -2,8 +2,8 @@
 
 namespace Proximify\HIndexReader;
 
-use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
+use Symfony\Component\Process\Exception\ProcessFailedException;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -18,7 +18,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 class GoogleScholar
 {
-    const LIBRARY_PATH = __DIR__ . '/python/_gscholar.py';
+    const LIBRARY_PATH = __DIR__ . '/python/_gscholar.py ';
 
     function __construct() 
     {
@@ -27,27 +27,11 @@ class GoogleScholar
 
     function queryHIndex($q)
     {
-        $process = new Process(['python3', self::LIBRARY_PATH, '--q', $q]);
-        $process->run();
-
-        // executes after the command finishes
-        if (!$process->isSuccessful()) {
-            throw new ProcessFailedException($process);
-        }
-
-        return $process->getOutput();
+        return shell_exec('python3 ' .  self::LIBRARY_PATH . "--q '$q'");
     }
 
     function getHIndexByAuthorId($id)
-    {
-        $process = new Process(['python3', self::LIBRARY_PATH, '--id', $id]);
-        $process->run();
-
-        // executes after the command finishes
-        if (!$process->isSuccessful()) {
-            throw new ProcessFailedException($process);
-        }
-
-        return $process->getOutput();
+    {        
+        return shell_exec('python3 ' .  self::LIBRARY_PATH . '--id ' . $id);
     }
 }

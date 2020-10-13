@@ -1,9 +1,7 @@
+#/usr/bin/python
 import argparse
-from scholarly import scholarly, ProxyGenerator
-
-# pg = ProxyGenerator()
-# pg.FreeProxies()
-# scholarly.use_proxy(pg)
+from scholarly import scholarly
+import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--q", help="Searches for an author by given query and returns his h-index")
@@ -16,9 +14,19 @@ if args.q:
     q = args.q
     search_query = scholarly.search_author(q)
     author = next(search_query).fill(sections=['indices'])
-    print(author)
 elif args.id:
     _id = args.id
     author = scholarly.search_author_id(_id)
     author = author.fill(sections=['indices'])
-    print(author)
+
+if author:
+    _dict = {
+        'id': author.id, 
+        'name': author.name,
+        'affiliation': author.affiliation,
+        'hindex': author.hindex,
+        'hindex5y': author.hindex5y,
+        'i10index': author.i10index,
+        'i10index5y': author.i10index5y,
+    }
+    print(json.dumps(_dict))

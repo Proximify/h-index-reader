@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>h-index-reader - Test</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+        
+            td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+        
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3 class="text-center mb-3 mt-3">h-index-reader</h3>
+            <table style="width:100%">
+                <tr>
+                    <th>Task</th>
+                    <th>Input</th>
+                </tr>
+                <tr>
+                    <td><a onclick="" href="javascript:readFromJson()">Read people from JSON file and output</a></td>
+                    <td>dummyData.json</td>
+                </tr>
+                <tr>
+                    <td><a onclick="" href="javascript:getHIndexByName()">Get h-index by person name</a></td>
+                    <td>Diana Inkpen</td>
+                </tr>
+                <tr>
+                    <td><a onclick="" href="javascript:getHIndexByNameAndAffiliation()">Get h-index by person name and
+                            affiliation</a></td>
+                    <td>Sven Dickinson, University of Toronto</a></td>
+                </tr>
+            </table>
+            <div id="result"></div>
+        </div>
+    </body>
+    <script src="js/jquery.min.js"></script>
+    <script>
+            function readFromJson() {
+                 $.getJSON("api/index.php", {action: 'readFromJson'}, function (result) {
+                    document.getElementById("result").innerHTML = result;
+                });
+            }
+
+            function getHIndexByName() {
+                var data = [
+                    {
+                        name: 'Diana Inkpen'
+                    }
+                ];
+                $.getJSON("api/index.php", { action: 'getHIndexByName', data: data}, function (result) {
+                    document.getElementById("result").innerHTML = result;
+                });
+            }
+
+            function getHIndexByNameAndAffiliation() {
+                    var data = [
+                    {
+                        name: 'Sven Dickinson',
+                        affiliation: 'University of Toronto'
+                    }
+                ];
+                $.getJSON("api/index.php", { action: 'getHIndexByNameAndAffiliation', data: data }, function (result) {
+                    document.getElementById("result").innerHTML = result;
+                });
+            }
+    </script>
+</html>
