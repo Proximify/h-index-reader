@@ -14,7 +14,7 @@ Accessing h-index information of an author programmatically is not convenient si
 
 h-index-reader provides a reliable way of accessing h-index information of an author by using multiple different information sources and libraries. Besides, it offers an option to use proxies so that information providers cannot block the bots.
 
-# Get Started
+# Getting Started
 
 h-index-reader both offers an API and a CLI to fetch indices of author(s). 
 
@@ -28,7 +28,7 @@ h-index-reader both offers an API and a CLI to fetch indices of author(s).
 h-index-reader provides an API to provide indices of an author from different sources.  The reader uses Google Scholar by default as the data source.
 
 <pre>
-    $hindexReader = new HindexReader();
+    $hindexReader = new ();
 </pre>
 
 

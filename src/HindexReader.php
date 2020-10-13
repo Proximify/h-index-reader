@@ -1,13 +1,13 @@
 <?php
 
-namespace Proximify\HindexReader;
+namespace Proximify\HIndexReader;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use \Exception;
 
 /**
- * File for class HindexReader.
+ * File for class HIndexReader.
  *
  * @author    Proximify Inc <support@proximify.com>
  * @copyright Copyright (c) 2020, Proximify Inc
@@ -15,7 +15,7 @@ use \Exception;
  * @version   1.0 UNIWeb Module
  */
 
-class HindexReader
+class HIndexReader
 {
     const CONFIG_FILE = '../settings/config.json';
 

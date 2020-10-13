@@ -13,7 +13,7 @@
     "minimum-stability": "alpha",
     "autoload": {
         "psr-4": {
-            "Proximify\\HindexReader\\": "src/"
+            "Proximify\\HIndexReader\\": "src/"
         }
     },
     "scripts": {

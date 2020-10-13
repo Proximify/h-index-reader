@@ -1,7 +1,7 @@
 import argparse
 from scholarly import scholarly, ProxyGenerator
 
-# pg = ProxyGen erator()
+# pg = ProxyGenerator()
 # pg.FreeProxies()
 # scholarly.use_proxy(pg)
 

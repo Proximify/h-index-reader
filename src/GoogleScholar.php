@@ -1,6 +1,6 @@
 <?php
 
-namespace Proximify\HindexReader;
+namespace Proximify\HIndexReader;
 
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;

@@ -11,12 +11,12 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Proximify\HindexReader;
+use Proximify\HIndexReader;
 
-$hindex = new HindexReader\HindexReader();
-// echo $hindex->queryHIndex('Diana Inkpen, University of Ottawa (Computer Science)');
+$hindex = new HIndexReader\HIndexReader();
+echo $hindex->queryHIndex('Diana Inkpen, University of Ottawa (Computer Science)');
 
-echo $hindex->getHIndexByAuthorId('avUYKIgAAAAJ');
+// echo $hindex->getHIndexByAuthorId('avUYKIgAAAAJ');
 
 
 // echo $hindex->getHIndexBatch();
