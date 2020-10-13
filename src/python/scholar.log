@@ -65,3 +65,11 @@ INFO:scholarly:Session proxy config is {}
 INFO:scholarly:Found 1 authors
 INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=66pwIBcAAAAJ&pagesize=100
 INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=avUYKIgAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=avUYKIgAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=6TGwETYAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=6TGwETYAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {}

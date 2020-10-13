@@ -31,28 +31,45 @@ h-index-reader provides an API to provide indices of an author from different so
     $hindexReader = new HIndexReader();
 </pre>
 
-The h-index of an author can be fetched in two ways (i) by providing name and affiliation of a person (ii) author ID (i.e. Google Scholar ID).
-
-Fetching an author's indices with his name and affiliation:
+The h-index of an author can be fetched in two ways (i) by providing name and/or affiliation of a person (ii) and/or profile URL (e.g. GoogleScholar URL). Name field is mandatory, however affiliation and profile url are optional fields.
 
 <pre>
-    $hindexReader->queryHIndex('Marty Banks, Berkeley');
+$people = [
+    [
+        'name' => 'Diego Macrini',
+        'affiliation' => 'Research Fellow, Proximify',
+        'profile_url' => 'https://scholar.google.com/citations?user=avUYKIgAAAAJ'
+    ],
+    [
+        'name' => 'Sven Dickinson',
+        'affiliation' => 'University of Toronto'
+    ]
+];
+
+$result = $hindexReader->queryHIndex($people);
 </pre>
 
-Result:
+Output:
 
 <pre>
-    {
-        'affiliation': 'Professor of Vision Science, UC Berkeley',
-        'citedby': 20953,
-        'citedby5y': 8126,
-        'filled': False,
-        'hindex': 67,
-        'hindex5y': 40,
-        'i10index': 153,
-        'i10index5y': 106,
-        'id': 'Smr99uEAAAAJ',
-        'interests': ['vision science', 'psychology', 'human factors', 'neuroscience'],
-        'name': 'Martin Banks'
-    }
+[
+  {
+    "id": "avUYKIgAAAAJ",
+    "name": "Diego Macrini",
+    "affiliation": "Research Fellow, Proximify",
+    "hindex": 11,
+    "hindex5y": 9,
+    "i10index": 12,
+    "i10index5y": 9
+  },
+  {
+    "id": "6TGwETYAAAAJ",
+    "name": "Sven Dickinson",
+    "affiliation": "Professor of Computer Science, University of Toronto",
+    "hindex": 43,
+    "hindex5y": 23,
+    "i10index": 91,
+    "i10index5y": 44
+  }
+]
 </pre>
