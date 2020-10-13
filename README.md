@@ -75,4 +75,10 @@ Output:
 </pre>
 
 # Settings
-h-index-reader offers a [settings file](settings/HIndexReader.json) where you can configure advanced options.
+h-index-reader provides a [settings file](settings/HIndexReader.json) where you can configure advanced options. Here's the list settings supported in the current version:
+
+| Setting        | Description           |
+| ------------- |:-------------:|
+| people      | List of people to fetch h-indices |
+
+
