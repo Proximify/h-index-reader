@@ -28,11 +28,10 @@ h-index-reader both offers an API and a CLI to fetch indices of author(s).
 h-index-reader provides an API to provide indices of an author from different sources.  The reader uses Google Scholar by default as the data source.
 
 <pre>
-    $hindexReader = new ();
+    $hindexReader = new HIndexReader();
 </pre>
 
-
-The h-index of an author can be fetched in two ways (i) by providing name and affiliation of a persion (ii) author ID (i.e. Google Scholar ID).
+The h-index of an author can be fetched in two ways (i) by providing name and affiliation of a person (ii) author ID (i.e. Google Scholar ID).
 
 Fetching an author's indices with his name and affiliation:
 
@@ -56,142 +55,4 @@ Result:
         'interests': ['vision science', 'psychology', 'human factors', 'neuroscience'],
         'name': 'Martin Banks'
     }
-</pre>
-
-It is also possible to use author's profile ID to get his indices: 
-
-<pre>
-    $hindexReader->getHIndexByAuthorId('avUYKIgAAAAJ');
-</pre>
-
-<pre>
-    {   
-        'affiliation': 'Research Fellow, Proximify',
-        'citedby': 968,
-        'citedby5y': 328,
-        'filled': False,
-        'hindex': 11,
-        'hindex5y': 9,
-        'i10index': 12,
-        'i10index5y': 9,
-        'id': 'avUYKIgAAAAJ',
-        'interests': ['computer vision',
-               'social networking',
-               'ehealth',
-               'video surveillance',
-               'shape matching'],
-         'name': 'Diego Macrini'
-    }
-</pre>
-
-It is also possible to fetch in a batch. To do that, you must set the batchFilePath in config.json under the settings as well as the output batchOutputFilePath. An example input batch file is shown below:
-
-<pre>
-[
-    {
-        "affiliation": "Research Fellow, Proximify",
-        "name": "Diego Macrini",
-        "id": "avUYKIgAAAAJ"
-    },
-    {
-        "affiliation": "Mannheim University",
-        "name": "Martin Weber",
-        "id": "SDlCXgwAAAAJ"
-    },
-    {
-        "affiliation": "Software Developer - Researcher",
-        "name": "Seyed M. Mirtaheri",
-        "id": "fw9tblsAAAAJ"
-    },
-    {
-        "affiliation": "University of Ottawa (Computer Science)",
-        "name": "Diana Inkpen",
-        "id": "66pwIBcAAAAJ"
-    }
-]
-</pre>
-
-ID and affiliation fields are optional and name is field is mandory. An example output is shown below:
-
-<pre>
-[
-   {
-      "affiliation":"Research Fellow, Proximify",
-      "citedby":968,
-      "citedby5y":328,
-      "email":"@proximify.ca",
-      "filled":"False",
-      "hindex":11,
-      "hindex5y":9,
-      "i10index":12,
-      "i10index5y":9,
-      "id":"avUYKIgAAAAJ",
-      "interests":[
-         "computer vision",
-         "social networking",
-         "ehealth",
-         "video surveillance",
-         "shape matching"
-      ],
-      "name":"Diego Macrini",
-      "url_picture":"https://scholar.google.com/citations?view_op=medium_photo&user=avUYKIgAAAAJ"
-   },
-   {
-      "affiliation":"Mannheim University",
-      "citedby":23158,
-      "citedby5y":8851,
-      "email":"@bank.bwl.uni-mannheim.de",
-      "filled":"False",
-      "hindex":68,
-      "hindex5y":48,
-      "i10index":170,
-      "i10index5y":104,
-      "id":"SDlCXgwAAAAJ",
-      "interests":[
-         "Martin Weber"
-      ],
-      "name":"Martin Weber",
-      "url_picture":"https://scholar.google.com/citations?view_op=medium_photo&user=SDlCXgwAAAAJ"
-   },
-   {
-      "affiliation":"Software Developer - Researcher",
-      "citedby":193,
-      "citedby5y":123,
-      "email":"@uottawa.ca",
-      "filled":"False",
-      "hindex":6,
-      "hindex5y":6,
-      "i10index":5,
-      "i10index5y":4,
-      "id":"fw9tblsAAAAJ",
-      "interests":[
-         "Parallel Processing",
-         "Message Passing",
-         "Distributed Systems",
-         "Web Crawling",
-         "Rich Internet Applications"
-      ],
-      "name":"Seyed M. Mirtaheri",
-      "url_picture":"https://scholar.google.com/citations?view_op=medium_photo&user=fw9tblsAAAAJ"
-   },
-   {
-      "affiliation":"University of Ottawa (Computer Science)",
-      "citedby":5802,
-      "citedby5y":3756,
-      "email":"@site.uottawa.ca",
-      "filled":"False",
-      "hindex":35,
-      "hindex5y":28,
-      "i10index":91,
-      "i10index5y":67,
-      "id":"66pwIBcAAAAJ",
-      "interests":[
-         "Natural Language Processing",
-         "Computational Linguistics",
-         "Information Retrieval"
-      ],
-      "name":"Diana Inkpen",
-      "url_picture":"https://scholar.google.com/citations?view_op=medium_photo&user=66pwIBcAAAAJ"
-   }
-]
 </pre>
