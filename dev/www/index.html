@@ -59,7 +59,7 @@
     <script>
             function readFromJson() {
                 document.getElementById("ajax-loader").style.display = 'block';
-                // document.getElementById("result").style.display = 'none';
+                document.getElementById("result").style.display = 'none';
                  $.getJSON("api/index.php", {action: 'readFromJson'}, function (result) {
                     document.getElementById("ajax-loader").style.display = 'none';
                     document.getElementById("result").style.display = 'block';
