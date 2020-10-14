@@ -25,13 +25,13 @@ class HIndexReader
 
     function __construct($options = []) 
     {
-        // $this->settings = $this->getSettings();
+        $this->settings = $this->getSettings();
         $this->service = new GoogleScholar();
     }
 
     function getSettings()
     {
-        return json_decode(file_get_contents(getcwd() . '/' . self::SETTINGS_FILE), true);
+        return json_decode(file_get_contents(getcwd() . '/../../' . self::SETTINGS_FILE), true);
     }
 
     function parseProfileUrl($profileUrl)
@@ -53,6 +53,8 @@ class HIndexReader
 
         if (empty($people))
             $people = $this->settings['people'];
+
+        $indices  = [];
 
         foreach ($people as $person)
         {

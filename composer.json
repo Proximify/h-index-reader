@@ -10,7 +10,7 @@
             "email": "mert@proximify.ca"
         }
     ],
-    "minimum-stability": "alpha",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Proximify\\HIndexReader\\": "src/"

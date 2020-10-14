@@ -1,8 +1,7 @@
 <html>
     <head>
         <title>h-index-reader - Test</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             table {
                 font-family: arial, sans-serif;
@@ -19,6 +18,12 @@
         
             tr:nth-child(even) {
                 background-color: #dddddd;
+            }
+
+            .loader {
+                display: none;
+                text-align: center;
+                margin-top: 1rem;
             }
         </style>
     </head>
@@ -45,12 +50,19 @@
                 </tr>
             </table>
             <div id="result"></div>
+            <div id="ajax-loader" class="loader">
+                <img src="img/ajax-loader.gif"></img>
+            </div>
         </div>
     </body>
     <script src="js/jquery.min.js"></script>
     <script>
             function readFromJson() {
+                document.getElementById("ajax-loader").style.display = 'block';
+                // document.getElementById("result").style.display = 'none';
                  $.getJSON("api/index.php", {action: 'readFromJson'}, function (result) {
+                    document.getElementById("ajax-loader").style.display = 'none';
+                    document.getElementById("result").style.display = 'block';
                     document.getElementById("result").innerHTML = result;
                 });
             }
@@ -61,7 +73,11 @@
                         name: 'Diana Inkpen'
                     }
                 ];
+                document.getElementById("ajax-loader").style.display = 'block';
+                document.getElementById("result").style.display = 'none';
                 $.getJSON("api/index.php", { action: 'getHIndexByName', data: data}, function (result) {
+                    document.getElementById("ajax-loader").style.display = 'none';
+                    document.getElementById("result").style.display = 'block';
                     document.getElementById("result").innerHTML = result;
                 });
             }
@@ -73,7 +89,11 @@
                         affiliation: 'University of Toronto'
                     }
                 ];
+                document.getElementById("ajax-loader").style.display = 'block';
+                document.getElementById("result").style.display = 'none';
                 $.getJSON("api/index.php", { action: 'getHIndexByNameAndAffiliation', data: data }, function (result) {
+                    document.getElementById("ajax-loader").style.display = 'none';
+                    document.getElementById("result").style.display = 'block';
                     document.getElementById("result").innerHTML = result;
                 });
             }
