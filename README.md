@@ -18,6 +18,11 @@ h-index-reader provides a reliable way of accessing h-index information of an au
 
 h-index-reader both offers an API and a CLI to fetch indices of author(s). 
 
+
+## Requirements 
+
+h-index-reader requires both Python 3 or later and pip3 in your system.
+
 ## Installation
 <pre>
     composer require proximify/h-index-reader
