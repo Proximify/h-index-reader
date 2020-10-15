@@ -12,7 +12,7 @@ Accessing h-index information of an author programmatically is not convenient si
 
 # Solution
 
-h-index-reader provides a reliable way of accessing h-index information of an author by using multiple different information sources and libraries. Besides, it offers an option to use proxies so that information providers cannot block the bots.
+h-index-reader provides a reliable way of accessing h-index information of an author by using multiple different information sources and libraries.
 
 # Getting Started
 
