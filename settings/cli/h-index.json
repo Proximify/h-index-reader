@@ -1,0 +1,12 @@
+{
+    "class": "Proximify\\HIndexReader\\HIndexReader",
+    "method": "abc",
+    "isStatic": false,
+    "askConfirm": false,
+    "arguments": {
+        "queryName": {
+            "prompt": "Name of the query?",
+            "index": 0
+        }
+    }
+}

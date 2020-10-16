@@ -5,8 +5,6 @@ namespace Proximify\HIndexReader;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 
-require_once __DIR__ . '/../vendor/autoload.php';
-
 /**
  * File for class GoogleScholar.
  *
@@ -20,10 +18,7 @@ class GoogleScholar
 {
     const LIBRARY_PATH = __DIR__ . '/python/_gscholar.py ';
 
-    function __construct() 
-    {
-
-    }
+    function __construct() {}
 
     function queryHIndex($q)
     {

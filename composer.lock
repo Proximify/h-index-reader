@@ -4,8 +4,80 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5dba72d0a348ec82076ffe0d08df7db1",
+    "content-hash": "c9389d4282f71d84c07571a8a60e3703",
     "packages": [
+        {
+            "name": "proximify/cli-actions",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Proximify/cli-actions.git",
+                "reference": "77b880088f7fb03b7439c1e307f10ccb72b4ff77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Proximify/cli-actions/zipball/77b880088f7fb03b7439c1e307f10ccb72b4ff77",
+                "reference": "77b880088f7fb03b7439c1e307f10ccb72b4ff77",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Proximify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Proximify Inc",
+                    "email": "support@proximify.ca"
+                }
+            ],
+            "description": "Command-line interface (CLI) with custom actions and interactive prompts (e.g. composer app:action argument).",
+            "time": "2020-10-15T21:30:03+00:00"
+        },
+        {
+            "name": "proximify/cli-prompter",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Proximify/cli-prompter.git",
+                "reference": "99e7d46d02b40b10b8dc7a5664cff75352cd8e3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Proximify/cli-prompter/zipball/99e7d46d02b40b10b8dc7a5664cff75352cd8e3c",
+                "reference": "99e7d46d02b40b10b8dc7a5664cff75352cd8e3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Proximify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Proximify Inc",
+                    "email": "support@proximify.ca"
+                }
+            ],
+            "description": "Create interactive command-line interfaces (CLI) for your Composer packages.",
+            "time": "2020-10-11T19:33:42+00:00"
+        },
         {
             "name": "symfony/polyfill-php80",
             "version": "v1.18.1",
@@ -70,34 +142,20 @@
                 "portable",
                 "shim"
             ],
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v5.2.0-BETA1",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "6beca1cfc85d432ba66be4233ffb9ce4386ce85c"
+                "reference": "d3a2e64866169586502f0cd9cab69135ad12cee9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/6beca1cfc85d432ba66be4233ffb9ce4386ce85c",
-                "reference": "6beca1cfc85d432ba66be4233ffb9ce4386ce85c",
+                "url": "https://api.github.com/repos/symfony/process/zipball/d3a2e64866169586502f0cd9cab69135ad12cee9",
+                "reference": "d3a2e64866169586502f0cd9cab69135ad12cee9",
                 "shasum": ""
             },
             "require": {
@@ -107,7 +165,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.2-dev"
+                    "dev-master": "5.1-dev"
                 }
             },
             "autoload": {
@@ -134,30 +192,15 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-09-08T13:25:06+00:00"
+            "time": "2020-09-02T16:23:27+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "alpha",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }

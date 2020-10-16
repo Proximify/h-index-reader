@@ -2,14 +2,13 @@
 
 namespace Proximify\HIndexReader;
 
-require_once __DIR__ . '/../vendor/autoload.php';
-
 use \Exception;
 
 /**
- * File for class HIndexReader.
+ * A class that allows you to retrieve author's h-index information from 
+ * different sources including Google Scholar.
  *
- * @author    Proximify Inc <support@proximify.com>
+ * @author Mert Metin <mert@proximify.ca>
  * @copyright Copyright (c) 2020, Proximify Inc
  * @license   MIT
  * @version   1.0 UNIWeb Module
@@ -19,21 +18,48 @@ class HIndexReader
 {
     const SETTINGS_FILE = '../settings/HIndexReader.json';
 
+    /**
+     * @var @service Service used to fetch h-indicies.
+     */
     public $service;
+
+    /**
+     * @var @settings Component settings.
+     */
     public $settings;
+
+    /**
+     * @var @options Component options.
+     */
     public $options;
 
+
+    /**
+    * C'tor
+    * @param $options Component options.
+    */
     function __construct($options = []) 
     {
         $this->settings = $this->getSettings();
         $this->service = new GoogleScholar();
     }
 
+    /**
+     * Returns the list of settings under the settings/HIndexReader.json.
+     * 
+     * @return string 
+     */
     function getSettings()
     {
         return json_decode(file_get_contents(getcwd() . '/../../' . self::SETTINGS_FILE), true);
     }
 
+    /**
+     * Parses GoogleScholar URL and returns profile ID of user.
+     * 
+     * @param string $profileUrl GoogleScholar profile URL (e.g. https://scholar.google.com/citations?hl=en&user=SDlCXgwAAAAJ)
+     * @return string $profileId GoogleScholara profile ID
+     */
     function parseProfileUrl($profileUrl)
     {
         if (filter_var($profileUrl, FILTER_VALIDATE_URL) === FALSE) 
@@ -49,6 +75,13 @@ class HIndexReader
         return $profileId;
     }
 
+    /**
+     * Retrieves author(s) h-indicides based on their name, 
+     * affiliation and/or GoogleScholar Profile URL.
+     * 
+     * @param array $people List of people to fetch h-indices.
+     * @return array $indices List of people with their h-indicies.
+     */
     function queryHIndex($people = NULL) {
 
         if (empty($people))
@@ -90,5 +123,9 @@ class HIndexReader
         }
 
         return $indices;
+    }
+
+    function abc() {
+        return 'asd';
     }
 }

@@ -2,7 +2,9 @@
     "type": "uniweb-module",
     "name": "proximify/h-index-reader",
     "require": {
-        "symfony/process": "^5.1"
+        "symfony/process": "^5.1",
+        "proximify/cli-prompter": "^1.0",
+        "proximify/cli-actions": "^1.0"
     },
     "authors": [
         {
@@ -17,6 +19,6 @@
         }
     },
     "scripts": {
-        "pre-install-cmd": "bash scripts/dependency-checker.sh"
+        "h-index": "Proximify\\HIndexReader\\HIndexCLI::auto"
     }
-}   
+}
