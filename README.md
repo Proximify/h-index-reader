@@ -86,7 +86,7 @@ h-index-reader provides a [settings file](settings/HIndexReader.json) where you 
 
 | Setting        | Description           |
 | ------------- |:-------------:|
-| people      | List of people to fetch h-indices. A sample can be found [here](dev/dummyData.json). |
+| people      | List of people to fetch h-indices. A sample can be found [here](docs/dummyData.json). |
 
 
 ## Contributing
