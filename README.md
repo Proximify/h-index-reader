@@ -103,4 +103,4 @@ Copyright (c) Proximify Inc. All rights reserved.
 
 Licensed under the [MIT](https://opensource.org/licenses/MIT) license.
 
-**CLI Actions** is made by [Proximify](https://proximify.com). We invite the community to participate.
+**h-index-reader** is made by [Proximify](https://proximify.com). We invite the community to participate.
