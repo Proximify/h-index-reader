@@ -2,6 +2,8 @@
 
 h-index-reader is a module that allows you to retrieve author's h-index information from different sources including Google Scholar.
 
+@@include[Table of contents](docs/toc.md)
+
 -   [Table of contents](docs/toc.md)
  
 # What is h-index?
