@@ -2,7 +2,7 @@
 
 # Table of contents
 
-- [h-index-reader](#h-index-reader)
+- [h-index-reader](../#h-index-reader)
 - [What is h-index?](#what-is-h-index-)
 - [Problem](#problem)
 - [Solution](#solution)
