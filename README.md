@@ -4,33 +4,33 @@ h-index-reader is a module that allows you to retrieve author's h-index informat
 
 -   [Table of contents](docs/toc.md)
  
-# What is h-index?
+## What is h-index?
 
 According to Wikipedia, "The h-index is an author-level metric that measures both the productivity and citation impact of the publications of a scientist or scholar. The h-index correlates with obvious success indicators such as winning the Nobel Prize, being accepted for research fellowships and holding positions at top universities."
 
-# Problem
+## Problem
 
 Accessing h-index information of an author programmatically is not convenient since there is no API to fetch that information from scholarly databases such as Google Scholar and SCOPUS. There have been some attempts to overcome this problem by scraping author's web profiles (e.g. Google Scholar profile). However, this is not always a guaranteed way getting indicies (e.g. h-index, h-index5y, i-10index etc.) since Google and other providers block the access of web crawlers.
 
-# Solution
+## Solution
 
 h-index-reader provides a reliable way of accessing h-index information of an author by using multiple different information sources and libraries.
 
-# Getting Started
+## Getting Started
 
 h-index-reader both offers an API and a CLI to fetch indices of author(s). 
 
 
-## Requirements 
+### Requirements 
 
 h-index-reader requires both Python 3 or later and pip3 in your system.
 
-## Installation
+### Installation
 <pre>
     composer require proximify/h-index-reader
 </pre>
 
-# API 
+## API 
 
 h-index-reader provides an API to provide indices of an author from different sources.  The reader uses Google Scholar by default as the data source.
 
@@ -81,7 +81,7 @@ Output:
 ]
 </pre>
 
-# Settings
+## Settings
 h-index-reader provides a [settings file](settings/HIndexReader.json) where you can configure advanced options. Here's the list settings supported in the current version:
 
 | Setting        | Description           |
