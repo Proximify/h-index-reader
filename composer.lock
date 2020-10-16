@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9389d4282f71d84c07571a8a60e3703",
+    "content-hash": "ec9555b7d96c695efa878e4cf8d1a2de",
     "packages": [
         {
             "name": "proximify/cli-actions",
-            "version": "1.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Proximify/cli-actions.git",
@@ -77,6 +77,42 @@
             ],
             "description": "Create interactive command-line interfaces (CLI) for your Composer packages.",
             "time": "2020-10-11T19:33:42+00:00"
+        },
+        {
+            "name": "proximify/foreign-packages",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Proximify/foreign-packages.git",
+                "reference": "0342a7a8f8695beaa3a2f810847d274a1da0de95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Proximify/foreign-packages/zipball/0342a7a8f8695beaa3a2f810847d274a1da0de95",
+                "reference": "0342a7a8f8695beaa3a2f810847d274a1da0de95",
+                "shasum": ""
+            },
+            "require": {
+                "proximify/cli-actions": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Proximify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Proximify Inc",
+                    "email": "support@proximify.ca"
+                }
+            ],
+            "description": "Install and update foreign package dependencies (NPM, Yarn, PIP, etc) when a composer project is installed or updated.",
+            "time": "2020-10-12T02:25:39+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -198,9 +234,13 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "proximify/cli-actions": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.1.0"
+    },
     "platform-dev": []
 }

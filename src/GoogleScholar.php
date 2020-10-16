@@ -14,19 +14,21 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
  * @version   1.0 UNIWeb Module
  */
 
+require_once('libraries/gscholar/Scholarly.php');
+
 class GoogleScholar
 {
-    const LIBRARY_PATH = __DIR__ . '/python/_gscholar.py ';
-
-    function __construct() {}
+    function __construct() {
+        $this->service = new Scholarly();
+    }
 
     function queryHIndex($q)
     {
-        return shell_exec('python3 ' .  self::LIBRARY_PATH . "--q '$q'");
+        return $this->service->queryHIndex($q);
     }
 
-    function getHIndexByAuthorId($id)
+    function queryHIndexById($id)
     {        
-        return shell_exec('python3 ' .  self::LIBRARY_PATH . '--id ' . $id);
+        return $this->service->queryHIndexById($id);
     }
 }

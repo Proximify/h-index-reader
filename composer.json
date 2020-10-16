@@ -2,9 +2,9 @@
     "type": "uniweb-module",
     "name": "proximify/h-index-reader",
     "require": {
+        "php": ">=7.1.0",
         "symfony/process": "^5.1",
-        "proximify/cli-prompter": "^1.0",
-        "proximify/cli-actions": "^1.0"
+        "proximify/cli-actions": "dev-master"
     },
     "authors": [
         {
@@ -19,6 +19,9 @@
         }
     },
     "scripts": {
-        "h-index": "Proximify\\HIndexReader\\HIndexCLI::auto"
+        "post-install-cmd": "Proximify\\ForeignPackages::auto",
+        "post-update-cmd": "Proximify\\ForeignPackages::auto",
+        "post-create-project-cmd": "Proximify\\ForeignPackages::auto",
+        "query-h-index": "Proximify\\HIndexReader\\HIndexCLI::auto"
     }
 }

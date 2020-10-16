@@ -1,5 +1,7 @@
 <?php
 
+namespace Proximify\HIndexReader;
+
 /**
  * File for class HIndexCLI.
  *
@@ -8,8 +10,6 @@
  * @license   https://opensource.org/licenses/GPL-3.0 GNU GPL 3.0
  * @version   1.0.0 GLOT Run Time Library
  */
-
-namespace Proximify\HIndexReader;
 
 /**
  * 

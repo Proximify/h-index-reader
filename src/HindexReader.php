@@ -2,8 +2,6 @@
 
 namespace Proximify\HIndexReader;
 
-use \Exception;
-
 /**
  * A class that allows you to retrieve author's h-index information from 
  * different sources including Google Scholar.
@@ -51,7 +49,7 @@ class HIndexReader
      */
     function getSettings()
     {
-        return json_decode(file_get_contents(getcwd() . '/../../' . self::SETTINGS_FILE), true);
+        return json_decode(file_get_contents(__DIR__ . '../' . self::SETTINGS_FILE), true);
     }
 
     /**
@@ -84,13 +82,13 @@ class HIndexReader
      */
     function queryHIndex($people = NULL) {
 
-        if (empty($people))
+        if (empty($people) || empty($people['people']))
             $people = $this->settings['people'];
 
         $indices  = [];
 
         foreach ($people as $person)
-        {
+        {   
             if (empty($person['profile_url']))
             {
                 if (empty($person['name']))
@@ -116,7 +114,7 @@ class HIndexReader
                 if (!$profileId)
                     return;
 
-                $res = $this->service->getHIndexByAuthorId($profileId);
+                $res = $this->service->queryHIndexById($profileId);
 
                 $indices []= $res;
             }
@@ -125,7 +123,7 @@ class HIndexReader
         return $indices;
     }
 
-    function abc() {
-        return 'asd';
+    function outputHIndexQuery($people) {
+        print(json_encode($this->queryHIndex($people)));
     }
 }

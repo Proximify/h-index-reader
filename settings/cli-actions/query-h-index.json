@@ -1,0 +1,7 @@
+{
+    "class": "Proximify\\HIndexReader\\HIndexReader",
+    "method": "outputHIndexQuery",
+    "isStatic": false,
+    "askConfirm": false,
+    "arguments": {}
+}
