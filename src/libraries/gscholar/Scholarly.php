@@ -3,7 +3,7 @@
 namespace Proximify\HIndexReader;
 
 /**
- * File for class DependencyInstaller.
+ * Wrapper class for Python's scholarly package.
  *
  * @author    Proximify Inc <support@proximify.com>
  * @copyright Copyright (c) 2020, Proximify Inc
