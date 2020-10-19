@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c55fb86b98e59d40ff45923d7d0d7160",
+    "content-hash": "436a65f3bfd73dc16f4a485e6996d707",
     "packages": [
         {
             "name": "proximify/cli-actions",
@@ -257,9 +257,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "proximify/cli-actions": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
