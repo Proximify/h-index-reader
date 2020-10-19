@@ -11,11 +11,18 @@ namespace Proximify\HIndexReader;
  * @version   1.0.0 GLOT Run Time Library
  */
 
-class DependencyInstaller
+class DependencyInstaller extends \Proximify\ForeignPackages
 {
-    function installDependencies() {
-        print('Installing dependencies.');
-        $output = exec('pip3 install scholarly --user && pip3 install argparse --user');
-        print($output);
+    function checkDependencies() {
+        printf('Checking dependencies.');
+        $output = $this->findApp('python3');
+
+        if(empty($output))
+            print('You need Python 3 or later in your system to run this package.');
+
+        $output = $this->findApp('pip3');
+
+        if(empty($output))
+            print('You need pip3 or later in your system to run this package.');
     }
 }

@@ -1,4 +1,0 @@
-{
-    "class": "Proximify\\HIndexReader\\DependencyInstaller",
-    "method": "installDependencies"
-}

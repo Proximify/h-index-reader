@@ -1,0 +1,2 @@
+class: Proximify\HIndexReader\DependencyInstaller
+method: checkDependencies

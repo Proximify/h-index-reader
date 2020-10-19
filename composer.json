@@ -4,7 +4,8 @@
     "require": {
         "php": ">=7.1.0",
         "symfony/process": "^5.1",
-        "proximify/cli-actions": "dev-master"
+        "proximify/cli-actions": "dev-master",
+        "proximify/foreign-packages": "^1.0"
     },
     "authors": [
         {
@@ -19,9 +20,7 @@
         }
     },
     "scripts": {
-        "post-install-cmd": "Proximify\\ForeignPackages::auto",
-        "post-update-cmd": "Proximify\\ForeignPackages::auto",
-        "post-create-project-cmd": "Proximify\\ForeignPackages::auto",
+        "pre-install-cmd": "Proximify\\HIndexReader\\HIndexCLI::auto",
         "query-h-index": "Proximify\\HIndexReader\\HIndexCLI::auto"
     }
 }
