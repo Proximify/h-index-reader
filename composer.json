@@ -19,7 +19,6 @@
         }
     },
     "scripts": {
-        "pre-install-cmd": "Proximify\\HIndexReader\\HIndexCLI::auto",
         "query-h-index": "Proximify\\HIndexReader\\HIndexCLI::auto"
     }
 }
