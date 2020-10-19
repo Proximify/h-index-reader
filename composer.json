@@ -4,6 +4,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.1.0",
+        "proximify/cli-actions": "dev-master",
         "proximify/foreign-packages": "^1.0"
     },
     "authors": [

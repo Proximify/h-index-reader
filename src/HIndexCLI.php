@@ -11,6 +11,12 @@ namespace Proximify\HIndexReader;
  * @version   1.0.0 GLOT Run Time Library
  */
 
+// TODO: Get vendor path automatically.
+if (file_exists(__DIR__ .  '/../vendor'))
+    require_once(__DIR__ . '/../vendor/autoload.php');
+else
+    require_once(__DIR__ . '/../../../../vendor/autoload.php');
+
 /**
  * 
  * Extend the base class in order to add an additional 
