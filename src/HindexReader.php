@@ -82,7 +82,7 @@ class HIndexReader
      */
     function queryHIndex($people = NULL) {
 
-        if (empty($people) || empty($people['people']))
+        if (empty($people))
             $people = $this->settings['people'];
 
         $indices  = [];
@@ -123,7 +123,15 @@ class HIndexReader
         return $indices;
     }
 
-    function outputHIndexQuery($people) {
+    function outputHIndexQuery($params) {
+        $people = $this->settings['people'];
+
+        if (!empty($params['people']))
+            $people = $params['people'];
+
+        
         print(json_encode($this->queryHIndex($people)));
+
+
     }
 }

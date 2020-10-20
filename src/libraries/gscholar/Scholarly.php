@@ -19,7 +19,7 @@ class Scholarly
 
     function queryHIndex($q)
     {
-        return shell_exec('python3 ' .  self::LIBRARY_PATH . __FUNCTION__ . '.py ' . $q);
+        return shell_exec('python3 ' .  self::LIBRARY_PATH . __FUNCTION__ . '.py ' . "'$q'");
     }
 
     function queryHIndexById($profileId)
