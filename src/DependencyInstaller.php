@@ -24,5 +24,12 @@ class DependencyInstaller extends \Proximify\ForeignPackages
 
         if(empty($output))
             print('You need pip3 or later in your system to run this package.');
+
+        $workingDir = __DIR__;
+        $output = $this->execute('python3 -m venv python3/_scholarly', $workingDir);
+        $output = $this->execute('source python3/_scholarly/bin/activate && pip3 install scholarly', $workingDir);
+ 
+        if (!empty($output['error']))
+            print('An error occured:' . $output['error']);
     }
 }

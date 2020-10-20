@@ -19,11 +19,13 @@ class Scholarly
 
     function queryHIndex($q)
     {
-        return shell_exec('python3 ' .  self::LIBRARY_PATH . __FUNCTION__ . '.py ' . "'$q'");
+        return shell_exec('source ' . self::LIBRARY_PATH . 'bin/activate && python3 ' .  
+            self::LIBRARY_PATH . __FUNCTION__ . '.py ' . "'$q'" . ' && deactivate');
     }
 
     function queryHIndexById($profileId)
     {
-        return shell_exec('python3 ' .  self::LIBRARY_PATH . __FUNCTION__ . '.py ' . $profileId);
+        return shell_exec('source ' . self::LIBRARY_PATH . 'bin/activate && python3 ' .  
+            self::LIBRARY_PATH . __FUNCTION__ . '.py ' . $profileId . ' && deactivate');
     }
 }
