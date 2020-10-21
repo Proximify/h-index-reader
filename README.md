@@ -110,6 +110,9 @@ h-index-reader provides a [settings file](settings/HIndexReader.json) where you 
 | people      | List of people to fetch h-indices. A sample can be found [here](docs/dummyData.json). |
 
 
+## Future Work
+We are planning to add more sources (Scopus, WebofScience) to fetch h-indices in the near future.
+
 ## Contributing
 
 This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to and actually do, grant us the rights to use your contribution. For details, visit our [Contributor License Agreement](https://github.com/Proximify/community/blob/master/docs/proximify-contribution-license-agreement.pdf).
