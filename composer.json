@@ -18,7 +18,7 @@
         }
     },
     "scripts": {
-        "post-package-install": "Proximify\\HIndexReader\\HIndexCLI::auto",        
+        "pre-install-cmd": "Proximify\\HIndexReader\\HIndexCLI::auto",        
         "query-h-index": "Proximify\\HIndexReader\\HIndexCLI::auto"
     }
 }
