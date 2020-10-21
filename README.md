@@ -40,7 +40,7 @@ However, if you add h-index-reader as a requirement for your project (i.e. using
 - Create the virtual environment:
 
 <pre>
-python3 -m venv python3/_scholarly
+python3 -m venv src/python3/_scholarly
 </pre>
 
 - Activate it:
@@ -50,6 +50,11 @@ python3 -m venv python3/_scholarly
 
 <pre>pip3 install scholarly</pre>
 
+- Deactivate venv:
+
+<pre>
+    deactivate
+</pre>
 
 ## API 
 
