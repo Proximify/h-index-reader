@@ -26,9 +26,30 @@ h-index-reader both offers an API and a CLI to fetch indices of author(s).
 h-index-reader requires both Python 3 or later and pip3 in your system.
 
 ### Installation
+
+You can both use composer require and compose create-project to install h-index-reader, but the requirements are different for the first option.
+
+h-index-reader creates an isolated environment for its Python packages so it doesn't mess up with the other packages in your system. When you create a project with following option, the scripts creates an isolated virtual environment:
+
 <pre>
     composer require proximify/h-index-reader
 </pre>
+
+However, if you add h-index-reader as a requirement for your project (i.e. using composer require), you have to create the virtual environment manually inside of the package, activate it and then install all the required Python packages:
+
+- Create the virtual environment:
+
+<pre>
+python3 -m venv python3/_scholarly
+</pre>
+
+- Activate it:
+<pre> source python3/_scholarly/bin/activate</pre>
+
+- Install the package:
+
+<pre>pip3 install scholarly</pre>
+
 
 ## API 
 
