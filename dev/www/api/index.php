@@ -8,12 +8,18 @@
  * @license   https://opensource.org/licenses/GPL-3.0 GNU GPL 3.0
  * @version   1.0
  */
+const VENDOR_DIR = '';
 
-// TODO: Get vendor path automatically.
-if (file_exists(__DIR__ . '/../../../vendor/autoload.php'))
-    require_once(__DIR__ . '/../../../vendor/autoload.php');
+if (empty(VENDOR_DIR))
+{
+    print('Please set the path of vendor directory.');
+    exit();
+}
+
+if (file_exists(VENDOR_DIR))
+    require_once(VENDOR_DIR . '/autoload.php');
 else
-    require_once(__DIR__ . '/../../../../../autoload.php');
+    exit();
 
 use Proximify\HIndexReader;
 
