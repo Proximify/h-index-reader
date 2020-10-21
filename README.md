@@ -44,16 +44,20 @@ python3 -m venv src/python3/_scholarly
 </pre>
 
 - Activate it:
-<pre> source src/python3/_scholarly/bin/activate</pre>
+<pre>
+source src/python3/_scholarly/bin/activate
+</pre>
 
 - Install the package:
 
-<pre>pip3 install scholarly</pre>
+<pre>
+pip3 install scholarly
+</pre>
 
 - Deactivate venv:
 
 <pre>
-    deactivate
+deactivate
 </pre>
 
 ## API 
