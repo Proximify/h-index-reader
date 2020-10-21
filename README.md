@@ -125,13 +125,13 @@ h-index-reader both offers a CLI and a web interface for testing.
 CLI:
 
 <pre>
-    composer query-h-index
+composer query-h-index
 </pre>
 
 You can also use the web interface for testing under the dev folder:
 
 <pre>
-    cd h-index-reader/dev/www && php -S localhost:8000
+cd h-index-reader/dev/www && php -S localhost:8000
 </pre>
 
 **Note:** Please set the correct path for the autoloader.php under the dev/www/api/index.php. Otherwise, 
